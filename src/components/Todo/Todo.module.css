@@ -36,3 +36,7 @@
   background-color: var(--color-accent);
   color: var(--color-white);
 }
+.completed {
+  text-decoration: line-through;
+  color: var(--color-grey);
+}
