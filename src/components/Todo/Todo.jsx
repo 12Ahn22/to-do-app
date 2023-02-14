@@ -56,15 +56,6 @@ const Todo = ({ todo, onUpdate, onDelete }) => {
     );
   }
 
-  return (
-    <li className={styles.todo}>
-      <input
-        className={styles.checkbox}
-        type="checkbox"
-        id={id}
-        checked={status === 'completed'}
-        onChange={handleChange}
-      />
       <label
         className={`${styles.text} ${
           status === 'completed' ? `${styles.completed}` : ''
