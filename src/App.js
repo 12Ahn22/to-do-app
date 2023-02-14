@@ -1,7 +1,20 @@
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import TodoList from './components/TodoList/TodoList';
 
 function App() {
-  return <div>메인</div>;
+  const [todos, setTodos] = useState([
+    { id: '1', text: '공부하기', status: 'active' },
+    { id: '2', text: '청소하기', status: 'active' },
+  ]);
+
+  return (
+    <main>
+      <Header todos={todos} />
+      <TodoList setTodos={setTodos} todos={todos} />
+    </main>
+  );
 }
 
 export default App;
