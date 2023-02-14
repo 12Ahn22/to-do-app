@@ -8,6 +8,19 @@ ul,
 ol {
   list-style: none;
 }
+
+/* ROOT */
+:root {
+  --color-bg-dark: #f5f5f5;
+  --color-bg: #fdfffd;
+  --color-grey: #acacac;
+  --color-text: #03001c;
+  --color-accent: #a084dc;
+  --color-white: #fff;
+  --color-scrollbar: #7d4ee4;
+}
+
+/* BODY */
 body {
   width: 100vw;
   height: 100vh;
@@ -20,16 +33,9 @@ body {
     rgba(58, 66, 82, 1) 26%,
     rgba(81, 76, 94, 1) 100%
   );
-}
 
-/* ROOT */
-:root {
-  --color-bg-dark: #f5f5f5;
-  --color-bg: #fdfffd;
-  --color-grey: #acacac;
-  --color-text: #03001c;
-  --color-accent: #645cbb;
-  --color-white: #fff;
+  /* 브라우저 기본 액센트 컬러를 변경 가능 */
+  accent-color: var(--color-accent);
 }
 
 #root {
@@ -44,4 +50,18 @@ body {
   -webkit-box-shadow: -2px 9px 29px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: -2px 9px 29px -12px rgba(0, 0, 0, 0.57);
   overflow: hidden;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-scrollbar);
 }
