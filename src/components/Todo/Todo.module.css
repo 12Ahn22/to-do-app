@@ -17,6 +17,14 @@
   font-size: 1.25rem;
 }
 
+.input {
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  margin: 0;
+}
+
 .button {
   background-color: var(--color-white);
   width: 26px;
@@ -36,3 +44,9 @@
   background-color: var(--color-accent);
   color: var(--color-white);
 }
+
+.completed {
+  text-decoration: line-through;
+  color: var(--color-grey);
+}
+
