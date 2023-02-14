@@ -20,13 +20,6 @@ ol {
   --color-scrollbar: #7d4ee4;
 }
 
-/* DARK MODE */
-html.dark {
-  --color-bg-dark: #1a1c35;
-  --color-bg: #22243b;
-  --color-text: #fff;
-}
-
 /* BODY */
 body {
   width: 100vw;
