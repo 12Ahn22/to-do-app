@@ -1,6 +1,10 @@
+import { useDarkMode } from '../../context/DarkModeContext';
 import styles from './Header.module.css';
+import { HiMoon, HiSun } from 'react-icons/hi';
 
 const Header = ({ todos }) => {
+  const { darkMode, toggleDarkMode } = useDarkMode();
+
   const total = todos.length;
   const actives = todos.filter((todo) => todo.status === 'active').length;
   const complted = total - actives;
@@ -18,6 +22,10 @@ const Header = ({ todos }) => {
           completed: <span className={styles.accent}>{complted}</span>
         </span>
       </div>
+      <button className={styles.button} onClick={toggleDarkMode}>
+        {!darkMode && <HiMoon />}
+        {darkMode && <HiSun />}
+      </button>
     </header>
   );
 };
