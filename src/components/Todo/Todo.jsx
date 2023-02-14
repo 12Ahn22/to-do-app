@@ -23,10 +23,6 @@ const Todo = ({ todo, onUpdate, onDelete }) => {
 
   const handleTextChange = (e) => {
     setUpdatedText(e.target.value);
-    // onUpdate({
-    //   ...todo,
-    //   text: updatedText,
-    // });
   };
 
   const handleModeChange = (mode) => {
@@ -56,6 +52,14 @@ const Todo = ({ todo, onUpdate, onDelete }) => {
     );
   }
 
+  return (
+    <li className={styles.todo}>
+      <input
+        className={styles.checkbox}
+        type={'checkbox'}
+        id={id}
+        onChange={handleChange}
+      />
       <label
         className={`${styles.text} ${
           status === 'completed' ? `${styles.completed}` : ''
