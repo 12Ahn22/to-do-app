@@ -10,6 +10,7 @@ const Header = ({ todos }) => {
 
   return (
     <header className={styles.header}>
+      ✨
       <div>
         <span className={styles.count}>
           total: <span className={styles.accent}>{total}</span>
