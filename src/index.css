@@ -26,8 +26,10 @@ body {
 :root {
   --color-bg-dark: #f5f5f5;
   --color-bg: #fdfffd;
+  --color-grey: #acacac;
   --color-text: #03001c;
   --color-accent: #645cbb;
+  --color-white: #fff;
 }
 
 #root {
@@ -41,4 +43,5 @@ body {
   box-shadow: -2px 9px 29px -12px rgba(0, 0, 0, 0.57);
   -webkit-box-shadow: -2px 9px 29px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: -2px 9px 29px -12px rgba(0, 0, 0, 0.57);
+  overflow: hidden;
 }
