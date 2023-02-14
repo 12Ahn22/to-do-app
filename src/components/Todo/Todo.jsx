@@ -26,7 +26,12 @@ const Todo = ({ todo, onUpdate, onDelete }) => {
         checked={status === 'completed'}
         onChange={handleChange}
       />
-      <label className={styles.text} htmlFor={id}>
+      <label
+        className={`${styles.text} ${
+          status === 'completed' ? `${styles.completed}` : ''
+        }`}
+        htmlFor={id}
+      >
         {text}
       </label>
 
