@@ -68,6 +68,7 @@ const Todo = ({ todo, onUpdate, onDelete }) => {
       >
         {updatedText}
       </label>
+      <div>작업중!</div>
 
       <button
         className={styles.button}
