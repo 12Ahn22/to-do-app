@@ -10,7 +10,7 @@ const Header = ({ todos }) => {
 
   return (
     <header className={styles.header}>
-      ✨
+      테스트1 헤더 변경
       <div>
         <span className={styles.count}>
           토탈: <span className={styles.accent}>{total}</span>
