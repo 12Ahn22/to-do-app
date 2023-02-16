@@ -13,13 +13,13 @@ const Header = ({ todos }) => {
       ✨
       <div>
         <span className={styles.count}>
-          total: <span className={styles.accent}>{total}</span>
+          토탈: <span className={styles.accent}>{total}</span>
         </span>
         <span className={styles.count}>
-          actives: <span className={styles.accent}>{actives}</span>
+          액티브: <span className={styles.accent}>{actives}</span>
         </span>
         <span className={styles.count}>
-          completed: <span className={styles.accent}>{complted}</span>
+          컴플릿: <span className={styles.accent}>{complted}</span>
         </span>
       </div>
       <button className={styles.button} onClick={toggleDarkMode}>
