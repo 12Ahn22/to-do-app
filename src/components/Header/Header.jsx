@@ -10,7 +10,7 @@ const Header = ({ todos }) => {
 
   return (
     <header className={styles.header}>
-      테스트1 헤더 변경 ✨데브가 변경되었습니다.!
+      누군가가 먼저 dev에 PR을 해서 dev가 머지되어 변경된 상태!
       <div>
         <span className={styles.count}>
           토탈: <span className={styles.accent}>{total}</span>
